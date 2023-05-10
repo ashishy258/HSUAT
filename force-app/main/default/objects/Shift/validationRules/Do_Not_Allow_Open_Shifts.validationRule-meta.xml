@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Do_Not_Allow_Open_Shifts</fullName>
+    <active>true</active>
+    <description>This validation rule ensure that Shifts are always created with a Service Resource</description>
+    <errorConditionFormula>ISBLANK(ServiceResourceId)</errorConditionFormula>
+    <errorMessage>Shifts cannot be created without a Service Resource</errorMessage>
+</ValidationRule>

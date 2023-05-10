@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Resolution_Code__c</fullName>
+    <externalId>false</externalId>
+    <label>Resolution Code</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ACD</fullName>
+                <default>false</default>
+                <label>A/C Condemned</label>
+            </value>
+            <value>
+                <fullName>ADM</fullName>
+                <default>false</default>
+                <label>Administrative Use Only</label>
+            </value>
+            <value>
+                <fullName>AFS</fullName>
+                <default>false</default>
+                <label>Air Filter Sold</label>
+            </value>
+            <value>
+                <fullName>ALO</fullName>
+                <default>false</default>
+                <label>A/C Left Off</label>
+            </value>
+            <value>
+                <fullName>AMS</fullName>
+                <default>false</default>
+                <label>A/C Miscellaneous</label>
+            </value>
+            <value>
+                <fullName>ANT</fullName>
+                <default>false</default>
+                <label>A/C No Trouble Found</label>
+            </value>
+            <value>
+                <fullName>AOP</fullName>
+                <default>false</default>
+                <label>A/C Off Part Ordered</label>
+            </value>
+            <value>
+                <fullName>API</fullName>
+                <default>false</default>
+                <label>A/C Part Install</label>
+            </value>
+            <value>
+                <fullName>ARP</fullName>
+                <default>false</default>
+                <label>A/C Repair</label>
+            </value>
+            <value>
+                <fullName>ATU</fullName>
+                <default>false</default>
+                <label>A/C Tuned-up</label>
+            </value>
+            <value>
+                <fullName>CCC</fullName>
+                <default>false</default>
+                <label>Call Cancelled - Call Center</label>
+            </value>
+            <value>
+                <fullName>CCT</fullName>
+                <default>false</default>
+                <label>Call Cancelled - Tech at door</label>
+            </value>
+            <value>
+                <fullName>CGI</fullName>
+                <default>false</default>
+                <label>Could Not Get In</label>
+            </value>
+            <value>
+                <fullName>CGP</fullName>
+                <default>false</default>
+                <label>Could Not Get In Phoned</label>
+            </value>
+            <value>
+                <fullName>COB</fullName>
+                <default>false</default>
+                <label>CO Detector Battery Replaced</label>
+            </value>
+            <value>
+                <fullName>COT</fullName>
+                <default>false</default>
+                <label>CO Detector Tested</label>
+            </value>
+            <value>
+                <fullName>CPE</fullName>
+                <default>false</default>
+                <label>Call Previously Executed</label>
+            </value>
+            <value>
+                <fullName>CTU</fullName>
+                <default>false</default>
+                <label>Combo HH/AC Tuned-up</label>
+            </value>
+            <value>
+                <fullName>EPO</fullName>
+                <default>false</default>
+                <label>Equipment Part Ordered</label>
+            </value>
+            <value>
+                <fullName>EUW</fullName>
+                <default>false</default>
+                <label>Equipment Unworkable</label>
+            </value>
+            <value>
+                <fullName>HCD</fullName>
+                <default>false</default>
+                <label>HH Condemned</label>
+            </value>
+            <value>
+                <fullName>HCL</fullName>
+                <default>false</default>
+                <label>HH Clean</label>
+            </value>
+            <value>
+                <fullName>HLO</fullName>
+                <default>false</default>
+                <label>Heat Left Off</label>
+            </value>
+            <value>
+                <fullName>HMS</fullName>
+                <default>false</default>
+                <label>HH Miscellaneous</label>
+            </value>
+            <value>
+                <fullName>HNE</fullName>
+                <default>false</default>
+                <label>HH Not Enough Heat</label>
+            </value>
+            <value>
+                <fullName>HNT</fullName>
+                <default>false</default>
+                <label>HH No Trouble Found</label>
+            </value>
+            <value>
+                <fullName>HOP</fullName>
+                <default>false</default>
+                <label>Heat Off Part Ordered</label>
+            </value>
+            <value>
+                <fullName>HPI</fullName>
+                <default>false</default>
+                <label>HH Part Install</label>
+            </value>
+            <value>
+                <fullName>HPP</fullName>
+                <default>false</default>
+                <label>HH Plumbing Part Install</label>
+            </value>
+            <value>
+                <fullName>HPR</fullName>
+                <default>false</default>
+                <label>HH Plumbing Repair</label>
+            </value>
+            <value>
+                <fullName>HRC</fullName>
+                <default>false</default>
+                <label>HH Recontrolled</label>
+            </value>
+            <value>
+                <fullName>HRP</fullName>
+                <default>false</default>
+                <label>HH Repair</label>
+            </value>
+            <value>
+                <fullName>HTU</fullName>
+                <default>false</default>
+                <label>HH Tuned-up</label>
+            </value>
+            <value>
+                <fullName>HWN</fullName>
+                <default>false</default>
+                <label>HH Warning Notice</label>
+            </value>
+            <value>
+                <fullName>IIP</fullName>
+                <default>false</default>
+                <label>Install Inspection Passed</label>
+            </value>
+            <value>
+                <fullName>INC</fullName>
+                <default>false</default>
+                <label>Inspection Not Complete</label>
+            </value>
+            <value>
+                <fullName>INS</fullName>
+                <default>false</default>
+                <label>INSTALL COMPLETE</label>
+            </value>
+            <value>
+                <fullName>LCP</fullName>
+                <default>false</default>
+                <label>Left Contract Proposal</label>
+            </value>
+            <value>
+                <fullName>MGR</fullName>
+                <default>false</default>
+                <label>Manager Followup Required</label>
+            </value>
+            <value>
+                <fullName>NCH</fullName>
+                <default>false</default>
+                <label>No Charge In-House Warr.</label>
+            </value>
+            <value>
+                <fullName>NCM</fullName>
+                <default>false</default>
+                <label>No Charge Manufacturers Warr.</label>
+            </value>
+            <value>
+                <fullName>NLT</fullName>
+                <default>false</default>
+                <label>Need Leak Test</label>
+            </value>
+            <value>
+                <fullName>PGP</fullName>
+                <default>false</default>
+                <label>Poor Gas Pressure</label>
+            </value>
+            <value>
+                <fullName>PMC</fullName>
+                <default>false</default>
+                <label>Pilot out due to Meter Change</label>
+            </value>
+            <value>
+                <fullName>QA</fullName>
+                <default>false</default>
+                <label>Quote Accepted</label>
+            </value>
+            <value>
+                <fullName>QG</fullName>
+                <default>false</default>
+                <label>Quote Given</label>
+            </value>
+            <value>
+                <fullName>TSC</fullName>
+                <default>false</default>
+                <label>Tech Safety Concern</label>
+            </value>
+            <value>
+                <fullName>UNK</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+            <value>
+                <fullName>WAM</fullName>
+                <default>false</default>
+                <label>WH American Warranty</label>
+            </value>
+            <value>
+                <fullName>WCD</fullName>
+                <default>false</default>
+                <label>WH Condemned</label>
+            </value>
+            <value>
+                <fullName>WCL</fullName>
+                <default>false</default>
+                <label>WH Clean</label>
+            </value>
+            <value>
+                <fullName>WLO</fullName>
+                <default>false</default>
+                <label>WH Left Off</label>
+            </value>
+            <value>
+                <fullName>WMS</fullName>
+                <default>false</default>
+                <label>WH Miscellaneous</label>
+            </value>
+            <value>
+                <fullName>WNT</fullName>
+                <default>false</default>
+                <label>WH No Trouble Found</label>
+            </value>
+            <value>
+                <fullName>WOP</fullName>
+                <default>false</default>
+                <label>WH Off Part Ordered</label>
+            </value>
+            <value>
+                <fullName>WPI</fullName>
+                <default>false</default>
+                <label>WH Part Install</label>
+            </value>
+            <value>
+                <fullName>WPP</fullName>
+                <default>false</default>
+                <label>WH Plumbing Part Install</label>
+            </value>
+            <value>
+                <fullName>WPR</fullName>
+                <default>false</default>
+                <label>WH Plumbing Repair</label>
+            </value>
+            <value>
+                <fullName>WRP</fullName>
+                <default>false</default>
+                <label>WH Repair</label>
+            </value>
+            <value>
+                <fullName>WTU</fullName>
+                <default>false</default>
+                <label>Water Heater Tune-Up</label>
+            </value>
+            <value>
+                <fullName>WWN</fullName>
+                <default>false</default>
+                <label>WH Warning Notice</label>
+            </value>
+            <value>
+                <fullName>997</fullName>
+                <default>false</default>
+                <label>ASSIST</label>
+            </value>
+            <value>
+                <fullName>QR</fullName>
+                <default>false</default>
+                <label>Quote Requested</label>
+            </value>
+            <value>
+                <fullName>CDW</fullName>
+                <default>false</default>
+                <label>Cancelled Due to Weather</label>
+            </value>
+            <value>
+                <fullName>DNQ</fullName>
+                <default>false</default>
+                <label>DidNotQuote</label>
+            </value>
+            <value>
+                <fullName>NC</fullName>
+                <default>false</default>
+                <label>NoContact</label>
+            </value>
+            <value>
+                <fullName>A2V</fullName>
+                <default>false</default>
+                <label>Agree2Visit</label>
+            </value>
+            <value>
+                <fullName>QD</fullName>
+                <default>false</default>
+                <label>Quote Declined</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

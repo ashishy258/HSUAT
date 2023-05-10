@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Rule_Based_Capacity_Available__c</fullName>
+    <externalId>false</externalId>
+    <formula>AND(
+Overall_Capacity_Rule__c &gt; Rule_Consumption__c,
+Max_Rule__c &gt; 0
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Rule Based Capacity Available</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

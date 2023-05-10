@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Do_Not_Allow_Duplicate_Shift_Swap</fullName>
+    <active>true</active>
+    <description>This validation rule prevents a Resource Swap on a confirmed Shift, if the Resource to whom Shift is being assigned already has a Shift for that day</description>
+    <errorConditionFormula>AND(
+NOT(ISNEW()),
+ISPICKVAL(PRIORVALUE(Status),&quot;Confirmed&quot;),
+ISCHANGED(ServiceResourceId),
+SwapOverlap__c
+)</errorConditionFormula>
+    <errorMessage>This Shift cannot be swapped as the selected Service Resource has a Shift created for this day already</errorMessage>
+</ValidationRule>

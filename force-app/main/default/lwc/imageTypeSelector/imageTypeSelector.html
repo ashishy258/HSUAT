@@ -1,0 +1,18 @@
+<template>
+    <div class="no-images-type-selected-screen slds-grid slds-grid_vertical slds-grid_vertical-align-center slds-grid_align-center" if:false={areImagesSelected}>
+        <div class="slds-var-p-around_small">
+            <button
+                onclick={handleFacePlateImageSelected}
+                type="button"
+                class="slds-button slds-button_outline-brand slds-col slds-button_stretch">
+                <label>Add Face Plate Image</label></button>
+        </div>
+        <div class="slds-var-p-around_small">
+            <button
+                onclick={handleRepairImageSelected}
+                type="button"
+                class="slds-button slds-button_outline-brand slds-col slds-button_stretch">
+                <label>Add Repair Image</label></button>
+        </div>
+    </div>
+</template>

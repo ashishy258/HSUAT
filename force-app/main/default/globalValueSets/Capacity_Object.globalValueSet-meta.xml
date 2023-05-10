@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>WorkOrder</fullName>
+        <default>false</default>
+        <label>WorkOrder</label>
+    </customValue>
+    <customValue>
+        <fullName>ServiceAppointment</fullName>
+        <default>false</default>
+        <label>ServiceAppointment</label>
+    </customValue>
+    <description>SFS AB Capacity</description>
+    <masterLabel>Capacity Object</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

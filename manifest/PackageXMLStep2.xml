@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>ABUtil</members>
+		<members>ABWrapper</members>
+		<members>BookSlotTest</members>
+		<members>BookSlots</members>
+		<members>GetSlots</members>
+		<members>GetSlotsTest</members>
+		<members>HSCommonUtil</members>
+		<members>HSCommonUtil_Test</members>
+		<members>HSTestFactory</members>
+		<members>HS_AWSFileUploadUtil</members>
+		<members>HS_AWSFileUploadUtil_Test</members>
+		<members>HS_HttpUtilMockFailure</members>
+		<members>HS_HttpUtilMockSuccess</members>
+		<members>HS_SignatureHelper</members>
+		<members>HS_SignatureHelper_Test</members>
+		<members>ImageCaptureController</members>
+		<members>ImageCaptureControllerTest</members>
+		<members>SFS_ABAssignedResourceHandler</members>
+		<members>SFS_ABAssignedResourceHandlerTest</members>
+		<members>SFS_ABCapacityRebuildJobBatch</members>
+		<members>SFS_ABCapacityRebuildJobBatchTest</members>
+		<members>SFS_ABCapacityRebuildJobUtil</members>
+		<members>SFS_ABCapacityRebuildJobUtilTest</members>
+		<members>SFS_ABConstantUtil</members>
+		<members>SFS_ABConsumedCapacityTriggerHandler</members>
+		<members>SFS_ABConsumedCapacityTriggerHandlerTest</members>
+		<members>SFS_ABInvokeRSO</members>
+		<members>SFS_ABNewDailyBatchResourceCapacity</members>
+		<members>SFS_ABNewDayBatchConsumedCapacityTest</members>
+		<members>SFS_ABNewDayBatchDailyConsumedCapacity</members>
+		<members>SFS_ABNewDayBatchRuleConsumedCapacity</members>
+		<members>SFS_ABOvertimeOfferTriggerHandler</members>
+		<members>SFS_ABOvertimeOfferTriggerHandlerTest</members>
+		<members>SFS_ABRSO_PlatformEventTriggerHandler</members>
+		<members>SFS_ABRebuildConsumedCapacityBatch</members>
+		<members>SFS_ABRebuildConsumedCapacityBatchTest</members>
+		<members>SFS_ABRelocatingResourceCapacityBatch</members>
+		<members>SFS_ABResourceAbsenceTriggerHandler</members>
+		<members>SFS_ABResourceAbsenceTriggerHandlerTest</members>
+		<members>SFS_ABResourceCapacityTimeSlotBatch</members>
+		<members>SFS_ABResourceCapacityTimeSlotUtil</members>
+		<members>SFS_ABSTMTriggerHandler</members>
+		<members>SFS_ABSTMTriggerHandlerTest</members>
+		<members>SFS_ABServApptDispatchStatusBatch</members>
+		<members>SFS_ABServApptDispatchStatusBatchTest</members>
+		<members>SFS_ABServApptTriggerHandlerTest</members>
+		<members>SFS_ABServiceAppointmentJeopardyBatch</members>
+		<members>SFS_ABServiceAppointmentJeopardyTest</members>
+		<members>SFS_ABServiceAppointmentTriggerHandler</members>
+		<members>SFS_ABServiceAppointmentUtils</members>
+		<members>SFS_ABServicePostalCodeTHTest</members>
+		<members>SFS_ABServicePostalCodeTriggerHandler</members>
+		<members>SFS_ABShiftTriggerHandler</members>
+		<members>SFS_ABShiftTriggerHandlerTest</members>
+		<members>SFS_ABTestFactory</members>
+		<members>SFS_ABUtil</members>
+		<members>SFS_ABUtil_Test</members>
+		<members>SFS_AWSFailedFileRetryBatch</members>
+		<members>SFS_AWSFailedFileRetryBatchScheduler</members>
+		<members>SFS_AWSFailedFileRetryBatchSchedulerTest</members>
+		<members>SFS_AWSFailedFileRetryBatch_Test</members>
+		<members>SFS_PreventResourcePrefUpdateHandler</members>
+		<members>SFS_PreventResourcePrefUpdateTest</members>
+		<members>SFS_PreventSkillRequirementUpdateHandler</members>
+		<members>SFS_PreventSkillRequirementUpdateTest</members>
+		<members>ViewingRecordsOnMobileHelper</members>
+		<members>ViewingRecordsOnMobileHelperTest</members>
+		<members>rflib_TriggerManager</members>
+		<members>rflib_TriggerManagerTest</members>
+		<members>SFS_ABNewDayCapacityBatchScheduler</members>
+		<members>SFS_ABNewDayCapacityBatchSchedulerTest</members>
+		<name>ApexClass</name>
+	</types>
+	<types>
+		<members>SFS_ABAssignedResourceTrigger</members>
+		<members>SFS_ABConsumedCapacityTrigger</members>
+		<members>SFS_ABOvertimeOfferTrigger</members>
+		<members>SFS_ABRSO_PlatformEventTrigger</members>
+		<members>SFS_ABResourceAbsenceTrigger</members>
+		<members>SFS_ABSAChangePlatformEventTrigger</members>
+		<members>SFS_ABSADeletePlatformEventTrigger</members>
+		<members>SFS_ABSAInsertPlatformEventTrigger</members>
+		<members>SFS_ABSTMTrigger</members>
+		<members>SFS_ABServiceAppointmentTrigger</members>
+		<members>SFS_ABServicePostalCodeTrigger</members>
+		<members>SFS_ABShiftTrigger</members>
+		<members>SFS_PreventResourcePreferenceUpdate</members>
+		<members>SFS_PreventSkillRequirementUpdate</members>
+		<name>ApexTrigger</name>
+	</types>
+	
+<types>
+		<members>SFS_AB_Capacity_Batch_Configuration.Batch1</members>
+		<members>SFS_AB_Capacity_Settings.Appointment_Booking_Policy_ID</members>
+		<members>SFS_AB_Capacity_Settings.Days_to_Build_Capacity_Data</members>
+		<members>SFS_AB_Capacity_Settings.ENABLE_AB_LOGGING_CONFIG_NAME</members>
+		<members>SFS_AB_Capacity_Settings.FSL_Schedule_Switch</members>
+		<members>SFS_AB_Capacity_Settings.NewDayRuleTerritorySize</members>
+		<members>SFS_AB_Capacity_Settings.Reschedule_Switch</members>
+		<members>SFS_HS_GlobalSettings.AssignedResourceLockStatus</members>
+		<members>SFS_HS_GlobalSettings.JeopardyStatus</members>
+		<members>rflib_Trigger_Configuration.Absence_After_Delete</members>
+		<members>rflib_Trigger_Configuration.Absence_After_Insert</members>
+		<members>rflib_Trigger_Configuration.Absence_After_Update</members>
+		<members>rflib_Trigger_Configuration.Absence_Before_Delete</members>
+		<members>rflib_Trigger_Configuration.Absence_Before_Insert</members>
+		<members>rflib_Trigger_Configuration.Absence_Before_Update</members>
+		<members>rflib_Trigger_Configuration.Assigned_Resource_After_Delete</members>
+		<members>rflib_Trigger_Configuration.Assigned_Resource_After_Insert</members>
+		<members>rflib_Trigger_Configuration.Assigned_Resource_After_Update</members>
+		<members>rflib_Trigger_Configuration.Assigned_Resource_Before_Update</members>
+		<members>rflib_Trigger_Configuration.Consumed_Capacity_After_Insert</members>
+		<members>rflib_Trigger_Configuration.Consumed_Capacity_After_Update</members>
+		<members>rflib_Trigger_Configuration.Consumed_Capacity_Before_Update</members>
+		<members>rflib_Trigger_Configuration.Overtime_Offer_After_Update</members>
+		<members>rflib_Trigger_Configuration.Overtime_Offer_Before_Insert</members>
+		<members>rflib_Trigger_Configuration.Overtime_Offer_Before_Update</members>
+		<members>rflib_Trigger_Configuration.RSO_PE_After_Insert</members>
+		<members>rflib_Trigger_Configuration.Resource_Preference_Before_Delete</members>
+		<members>rflib_Trigger_Configuration.Resource_Preference_Before_Insert</members>
+		<members>rflib_Trigger_Configuration.Resource_Preference_Before_Update</members>
+		<members>rflib_Trigger_Configuration.SA_After_Insert</members>
+		<members>rflib_Trigger_Configuration.SA_After_Update</members>
+		<members>rflib_Trigger_Configuration.SA_Before_Delete</members>
+		<members>rflib_Trigger_Configuration.SA_Before_Insert</members>
+		<members>rflib_Trigger_Configuration.SA_Before_Update</members>
+		<members>rflib_Trigger_Configuration.STM_After_Insert</members>
+		<members>rflib_Trigger_Configuration.STM_After_Update</members>
+		<members>rflib_Trigger_Configuration.STM_Before_Delete</members>
+		<members>rflib_Trigger_Configuration.STM_Before_Insert</members>
+		<members>rflib_Trigger_Configuration.STM_Before_Update</members>
+		<members>rflib_Trigger_Configuration.Serviceable_Postal_Code_Before_Insert</members>
+		<members>rflib_Trigger_Configuration.Serviceable_Postal_Code_Before_Update</members>
+		<members>rflib_Trigger_Configuration.Shift_After_Delete</members>
+		<members>rflib_Trigger_Configuration.Shift_After_Insert</members>
+		<members>rflib_Trigger_Configuration.Shift_After_Update</members>
+		<members>rflib_Trigger_Configuration.Shift_Before_Insert</members>
+		<members>rflib_Trigger_Configuration.Shift_Before_Update</members>
+		<members>rflib_Trigger_Configuration.Skill_Requirement_Before_Delete</members>
+		<members>rflib_Trigger_Configuration.Skill_Requirement_Before_Update</members>
+		<name>CustomMetadata</name>
+	</types>
+    <types>
+		<members>All_Service_Appointments</members>
+		<members>Capacity_Limits_Consumption</members>
+		<members>Resource_Overtime_Offers</members>
+		<members>Work_Orders_with_Product_Consumed</members>
+		<members>Service_Resource_Utilization</members>
+		<name>ReportType</name>
+	</types>
+    <types>
+		<members>Postal_Codes__c.Cannot_Create_Duplicate_Postal_Codes</members>
+		<members>ProductConsumed.Cannot_Consume_Product_on_Completed_WO</members>
+		<members>ServiceAppointment.Prevent_Changes_to_Completed_Appointment</members>
+		<members>ServiceAppointment.Prevent_Changes_to_Scheduled_Actual_Time</members>
+		<members>ServiceTerritory.Cannot_Edit_Service_Territory</members>
+		<members>Shift.Do_Not_Allow_Duplicate_Shift_Swap</members>
+		<members>Shift.Do_Not_Allow_Edit_On_Confirmed_Shifts</members>
+		<members>Shift.Do_Not_Allow_Multi_Day_Shifts</members>
+		<members>Shift.Do_Not_Allow_Open_Shifts</members>
+		<members>WorkOrder.Prevent_Changes_to_Completed_WorkOrders</members>
+		<name>ValidationRule</name>
+	</types>
+      <types>
+        <members>Capacity_Rule_Template__c-Daily Template Layout</members>
+        <members>Capacity_Rule_Template__c-Rule Template Layout</members>
+        <members>Consumed_Capacity__c-Daily Capacity Layout</members>
+        <members>Consumed_Capacity__c-Rule Capacity Layout</members>
+        <members>Equipment__c-Equipment Layout</members>
+        <members>Field_Service_Contract__c-Contract Layout</members>
+        <members>Global-Field Service Technician Layout</members>
+        <members>Labor__c-Labor Layout</members>
+        <members>Location-Field Service Location Layout</members>
+        <members>Location-Location Layout</members>
+        <members>OperatingHours-Operating Hours Layout</members>
+        <members>OperatingHours-Read Only Operating Hours Layout</members>
+        <members>Overtime_Offers__c-Resource Overtime Offer Layout</members>
+        <members>ProductConsumed-Product Consumed Layout</members>
+        <members>ProductItem-Product Item Layout</members>
+        <members>ProductTransfer-Product Transfer Layout</members>
+        <members>ResourceAbsence-Resource Absence Layout</members>
+        <members>ResourcePreference-Resource Preference Layout</members>
+        <members>Resource_Capacity__c-Resource Capacity Layout</members>
+        <members>ServiceAppointment-Service Appointment Layout</members>
+        <members>ServiceAppointment-Technician Service Appointment Layout</members>
+        <members>ServiceResource-Read Only Service Resource Layout</members>
+        <members>ServiceResource-Service Resource Layout</members>
+        <members>ServiceTerritory-Service Territory Layout</members>
+        <members>ServiceTerritoryMember-Service Territory Member Layout</members>
+        <members>Service_Appointment_History__c-Service Appointment History Layout</members>
+        <members>Shift-Shift Layout</members>
+        <members>ShiftTemplate-Shift Template Layout</members>
+        <members>WorkOrder-Technician Work Order Layout</members>
+        <members>WorkOrder-Work Order Layout</members>
+        <members>WorkType-Read Only Work Type Layout</members>
+        <members>WorkType-Work Type Layout</members>
+        <members>Work_Order_Appointment_History__c-Work Order Appointment History Layout</members>
+        <members>Work_Order_Contract__c-Work Order Contract Layout</members>
+        <members>Work_Order_Equipment__c-Work Order Equipment Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Equipment__c.Equipment_Compact_Layout</members>
+        <members>Labor__c.Labor_Compact_Layout</members>
+        <members>Overtime_Offers__c.Resource_Overtime_Offer_Compact_Layout</members>
+        <members>ProductConsumed.Product_Consumed_Compact_Layout</members>
+        <members>ProductItem.Product_Item_Compact_Layout</members>
+        <members>ResourceAbsence.Resource_Absence_Compact_layout</members>
+        <members>ServiceAppointment.Service_Appointment_Compact_Layout</members>
+        <members>ServiceResource.Service_Resource_Compact_Layout</members>
+        <members>ServiceTerritory.Service_Territory_Compact_Layout</members>
+        <members>Shift.Shift_Compact_Layout</members>
+        <members>WorkOrder.Work_Order_Layout</members>
+        <members>WorkType.Work_Type_Compact_Layout</members>
+        <members>Work_Order_Equipment__c.Work_Order_Equipment_Compact_Layout</members>
+        <name>CompactLayout</name>
+    </types>
+    <!-- Not able to find Serach layouts -->
+    <types>
+        <members>AquaCircle</members>
+        <members>BlackCircle</members>
+        <members>Home</members>
+        <members>LightBulb</members>
+        <members>PaperWithPen</members>
+        <members>RedCircle</members>
+        <members>ResourceWithNotepad</members>
+        <members>Wrench</members>
+		<members>Install</members>
+		<members>LeakTest</members>
+        <name>StaticResource</name>
+    </types>
+ 
+    <types>
+        <members>FSL__Field_Service_Reports/All_Service_Appointments</members>
+        <members>FSL__Field_Service_Reports/All_Service_Appointments_TuneUps</members>
+        <members>FSL__Field_Service_Reports/Daily_Limits_Consumed_Capacity</members>
+        <members>FSL__Field_Service_Reports/Product_Consumed</members>
+        <members>FSL__Field_Service_Reports/Rule_Based_Limits_Consumed_Capacity</members>
+        <members>FSL__Field_Service_Reports/Service_Resource_Overtime_Offers</members>
+        <members>FSL__Field_Service_Reports/Service_Resource_SLA_Compliance</members>
+        <members>FSL__Field_Service_Reports/Unscheduled_Service_Appointments</members>
+        <members>FSL__Field_Service_Reports/Service_Resource_Utilization_Report</members>
+		<name>Report</name>
+    </types>
+    <types>
+		<members>ResourceAbsence.FSL__Resource_Absence_Lightbox</members>
+		<members>ServiceAppointment.FSL__Service_Appointment_Expanded</members>
+		<members>ServiceAppointment.FSL__Service_Appointment_List_Columns</members>
+		<members>ServiceAppointment.FSL__Service_Appointment_List_Preview</members>
+		<members>ServiceAppointment.FSL__Service_Appt_Resource_Calendar_Display</members>
+		<members>ServiceAppointment.FSL__Service_Appt_Resource_Calendar_Tooltip</members>
+		<members>ServiceAppointment.FSL__Service_Info_Window_Map</members>
+		<members>ServiceAppointment.FSL__Service_Lightbox</members>
+		<members>ServiceAppointment.FSL__Service_Lightbox_Address</members>
+		<members>ServiceAppointment.FSL__Service_Lightbox_Time</members>
+		<members>ServiceAppointment.FSL__Service_Tooltip_Gantt</members>
+		<members>ServiceResource.FSL__Resource_Gantt_Filter</members>
+		<members>ServiceResource.FSL__Resource_Lightbox</members>
+		<members>WorkOrder.FSL__Gantt_Lightbox</members>
+		<name>FieldSet</name>
+	</types>
+    <types>
+	    <members>Capacity_Rule_Template__c.Daily_Capacity_Template</members>
+		<members>Capacity_Rule_Template__c.Rule_Template</members>
+		<members>Consumed_Capacity__c.Daily_Capacity</members>
+		<members>Consumed_Capacity__c.Rule_Based_Capacity</members>
+		<members>ResourceAbsence.FSL__Break</members>
+		<members>ResourceAbsence.FSL__Non_Availability</members>
+		<name>RecordType</name>
+	</types>
+  
+    <types>
+		<members>Shift.Mass_Shift_Update</members>
+		<name>WebLink</name>
+	</types>
+   
+    <types>
+		<members>Capacity_Rule_Template__c.Daily_Capacity</members>
+		<members>Capacity_Rule_Template__c.Rule_Based_Capacity</members>
+		<members>Consumed_Capacity__c.Daily_Consumed_Capacities</members>
+		<members>Consumed_Capacity__c.Rule_Based_Consumed_Capacities</members>
+		<members>OperatingHours.All_OperatingHours</members>
+		<members>Resource_Capacity__c.All_Resource_Capacities</members>
+		<members>ServiceAppointment.SLA_Violating_Appointments</members>
+		<members>ServiceAppointment.Unscheduled_Appointments</members>
+		<members>ServiceAppointment.VEC_Appointments</members>
+		<members>ServiceResource.All_ServiceResources</members>
+		<members>ServiceTerritory.All_ServiceTerritories</members>
+		<members>Shift.All_Shifts</members>
+		<members>Shift.My_Shifts</members>
+		<members>ShiftTemplate.All_ShiftTemplates</members>
+		<members>ShiftTemplate.My_ShiftTemplates</members>
+		<members>WorkType.All_WorkTypes</members>
+		<name>ListView</name>
+	</types>
+    <types>
+		<members>Field Service Read Only User</members>
+		<members>Field Service Technician</members>
+		<members>Field Service User</members>
+		<name>Profile</name>
+	</types>
+	<!-- Removed as Asked by Ankit, It will be data load part
+	<types>
+		<members>Field_Service_Notifications</members>
+		<name>CustomNotificationType</name>
+	</types>-->
+	<version>55.0</version>
+</Package>

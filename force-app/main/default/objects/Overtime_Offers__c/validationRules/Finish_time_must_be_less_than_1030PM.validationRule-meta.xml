@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Finish_time_must_be_less_than_1030PM</fullName>
+    <active>false</active>
+    <errorConditionFormula>RIGHT(Local_End_Time__c, 5) &gt; &apos;22:30&apos;</errorConditionFormula>
+    <errorMessage>Finish time must be less than 10:30PM</errorMessage>
+</ValidationRule>

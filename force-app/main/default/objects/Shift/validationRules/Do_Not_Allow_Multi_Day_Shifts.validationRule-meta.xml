@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Do_Not_Allow_Multi_Day_Shifts</fullName>
+    <active>true</active>
+    <description>Prevents creation of shifts spanning more than 1 day</description>
+    <errorConditionFormula>DATEVALUE(StartTime) &lt;&gt; DATEVALUE(EndTime)</errorConditionFormula>
+    <errorMessage>Shifts cannot span across multiple days, please ensure that the Start and End Times are  contained in the same day</errorMessage>
+</ValidationRule>

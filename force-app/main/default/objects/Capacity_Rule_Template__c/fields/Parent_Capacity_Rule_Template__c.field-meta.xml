@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Parent_Capacity_Rule_Template__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Parent Capacity Rule Template</label>
+    <referenceTo>Capacity_Rule_Template__c</referenceTo>
+    <relationshipLabel>Capacity Rule Templates</relationshipLabel>
+    <relationshipName>Capacity_Rule_Templates</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

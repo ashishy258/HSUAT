@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SLA_Violation__c</fullName>
+    <externalId>false</externalId>
+    <formula>AND(
+NOT(ISNULL(SchedStartTime)),
+NOT(ISNULL(SchedEndTime)), 
+OR(
+SchedStartTime &gt; ArrivalWindowEndTime,
+SchedStartTime &lt; ArrivalWindowStartTime
+))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>SLA Violation</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Work_Order__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This field is auto-set to the same record as the ParentRecordId (if the ParentRecordId is a Work Order). It allows easy reference to WO fields in flow GetRecords and SA formula fields. It should NOT be added to page layouts</description>
+    <externalId>false</externalId>
+    <label>Work Order</label>
+    <referenceTo>WorkOrder</referenceTo>
+    <relationshipLabel>WO Service Appointments</relationshipLabel>
+    <relationshipName>WO_Service_Appointments</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

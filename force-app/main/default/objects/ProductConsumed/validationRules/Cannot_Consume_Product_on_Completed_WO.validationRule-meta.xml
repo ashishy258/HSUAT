@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Consume_Product_on_Completed_WO</fullName>
+    <active>true</active>
+    <description>This validation rule prevents users from adding Product Consumed on Work Orders which have been submitted for payment processing or have been Completed</description>
+    <errorConditionFormula>AND(
+ISNEW(),
+OR(
+ISPICKVAL((WorkOrder.Status),&quot;Completed&quot;),
+WorkOrder.Process_Payments__c)
+)</errorConditionFormula>
+    <errorMessage>It is not possible to add Product Consumed on Work Orders which have been submitted for Payment Processing or have been Completed</errorMessage>
+</ValidationRule>

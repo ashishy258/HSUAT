@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Failed_to_Geocode__c</fullName>
+    <externalId>false</externalId>
+    <formula>Latitude = 0  || Longitude = 0</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Failed to Geocode</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

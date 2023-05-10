@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Start_time_cannot_be_prior_to_8_AM</fullName>
+    <active>false</active>
+    <errorConditionFormula>RIGHT(Local_Start_Time__c, 5) &lt; &apos;08:00&apos;</errorConditionFormula>
+    <errorMessage>Offer Start time must be greater than 8 AM</errorMessage>
+</ValidationRule>

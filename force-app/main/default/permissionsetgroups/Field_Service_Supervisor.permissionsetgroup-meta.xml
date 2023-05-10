@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Permission Set Group to be assigned to Field Service Supervisors</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Field Service Supervisor</label>
+    <mutingPermissionSets>Field_Service_Supervisor_Muted</mutingPermissionSets>
+    <permissionSets>FSL_Dispatcher_License</permissionSets>
+    <permissionSets>FSL_Dispatcher_Permissions</permissionSets>
+    <permissionSets>Field_Service_Manage_Capacity</permissionSets>
+    <permissionSets>Field_Service_Manage_Resources</permissionSets>
+    <permissionSets>Field_Service_Manage_Work</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

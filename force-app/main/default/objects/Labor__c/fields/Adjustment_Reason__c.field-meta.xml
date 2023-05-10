@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Adjustment_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Adjustment Reason</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A/C Tune-up marketing campaign</fullName>
+                <default>false</default>
+                <label>A/C Tune-up marketing campaign</label>
+            </value>
+            <value>
+                <fullName>Customer complaint</fullName>
+                <default>false</default>
+                <label>Customer complaint</label>
+            </value>
+            <value>
+                <fullName>Field Manager approved labor adjustment</fullName>
+                <default>false</default>
+                <label>Field Manager approved labor adjustment</label>
+            </value>
+            <value>
+                <fullName>Heating Tune-up marketing campaign</fullName>
+                <default>false</default>
+                <label>Heating Tune-up marketing campaign</label>
+            </value>
+            <value>
+                <fullName>Flat Rate Price</fullName>
+                <default>false</default>
+                <label>Flat Rate Price</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Low</fullName>
+        <default>false</default>
+        <label>Low</label>
+    </customValue>
+    <customValue>
+        <fullName>Due Date Approaching</fullName>
+        <default>false</default>
+        <label>Due Date Approaching</label>
+    </customValue>
+    <customValue>
+        <fullName>VIP Work</fullName>
+        <default>false</default>
+        <label>VIP Work</label>
+    </customValue>
+    <description>SFS AB Capacity Field values</description>
+    <masterLabel>Capacity Field Value</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

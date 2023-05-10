@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Absence Delete</fullName>
+                <default>false</default>
+                <label>Absence Delete</label>
+            </value>
+            <value>
+                <fullName>Absence Insert</fullName>
+                <default>false</default>
+                <label>Absence Insert</label>
+            </value>
+            <value>
+                <fullName>Absence Update</fullName>
+                <default>false</default>
+                <label>Absence Update</label>
+            </value>
+            <value>
+                <fullName>Capacity Template Delete</fullName>
+                <default>false</default>
+                <label>Capacity Template Delete</label>
+            </value>
+            <value>
+                <fullName>Capacity Template Insert</fullName>
+                <default>false</default>
+                <label>Capacity Template Insert</label>
+            </value>
+            <value>
+                <fullName>Capacity Template Update</fullName>
+                <default>false</default>
+                <label>Capacity Template Update</label>
+            </value>
+            <value>
+                <fullName>Resource Capacity Insert New Day</fullName>
+                <default>false</default>
+                <label>Resource Capacity Insert New Day</label>
+            </value>
+            <value>
+                <fullName>Service Appointment Update</fullName>
+                <default>false</default>
+                <label>Service Appointment Update</label>
+            </value>
+            <value>
+                <fullName>Service Appointment Update No AR</fullName>
+                <default>false</default>
+                <label>Service Appointment Update No AR</label>
+            </value>
+            <value>
+                <fullName>Service Resource Update</fullName>
+                <default>false</default>
+                <label>Service Resource Update</label>
+            </value>
+            <value>
+                <fullName>Service Territory Member Delete</fullName>
+                <default>false</default>
+                <label>Service Territory Member Delete</label>
+            </value>
+            <value>
+                <fullName>Service Territory Member Insert</fullName>
+                <default>false</default>
+                <label>Service Territory Member Insert</label>
+            </value>
+            <value>
+                <fullName>Service Territory Member Update</fullName>
+                <default>false</default>
+                <label>Service Territory Member Update</label>
+            </value>
+            <value>
+                <fullName>Service Territory Update</fullName>
+                <default>false</default>
+                <label>Service Territory Update</label>
+            </value>
+            <value>
+                <fullName>Service Territory Update - With Resource</fullName>
+                <default>false</default>
+                <label>Service Territory Update - With Resource</label>
+            </value>
+            <value>
+                <fullName>Shift Delete</fullName>
+                <default>false</default>
+                <label>Shift Delete</label>
+            </value>
+            <value>
+                <fullName>Shift Insert</fullName>
+                <default>false</default>
+                <label>Shift Insert</label>
+            </value>
+            <value>
+                <fullName>Shift Update</fullName>
+                <default>false</default>
+                <label>Shift Update</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

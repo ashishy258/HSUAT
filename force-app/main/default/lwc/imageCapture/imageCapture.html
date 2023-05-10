@@ -1,0 +1,35 @@
+<template>
+    <div if:false={isAllowedToUploadImage} class="slds-var-p-around_small" style="text-align:center; background-color:white;">
+        <div class="errorBox">
+            <p>{notAllowedToUploadMessage}</p>
+        </div>
+    </div>
+    <div if:true={isAllowedToUploadImage} class="slds-grid slds-grid_vertical" style="background-color: white; height: 100%;">
+        <div if:false={isTypeOfImageSelected}>
+            <c-image-type-selector
+            onfaceplateimageselected={handleFacePlateImageSelected}
+            onrepairimageselected={handleRepairImageSelected}></c-image-type-selector>
+        </div>
+        <div if:true={isTypeOfImageSelected}>
+            <c-image-selector
+                if:false={isImageSelected}
+                all-images-data={allImagesData}
+                onselectimages={handleImagesSelected}
+                onannotateimage={handleAnnotateImage}
+                onuploadrequest={handleUploadRequested}
+                style="height: 100%;"></c-image-selector>
+            <c-image-annotate
+                if:true={isImageSelected}
+                image-info={selectedImageInfo}
+                onsave={handleSaveAnnotatedImage}
+                ondiscard={handleImageDiscarded}
+                ondelete={handleDeleteImage}
+                style="height: 100%;"></c-image-annotate>
+        </div>
+    </div>
+
+    <c-toast-message if:true={shouldShowToast} message={toastMessage} type={toastType} onclose={hideToast}></c-toast-message>
+
+    <c-loading-spinner if:true={isUploading} loading-message="Uploading..."></c-loading-spinner>
+    <c-loading-spinner if:true={isReading} loading-message=""></c-loading-spinner>
+</template>

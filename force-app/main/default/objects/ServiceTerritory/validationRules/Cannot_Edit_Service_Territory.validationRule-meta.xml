@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Edit_Service_Territory</fullName>
+    <active>true</active>
+    <description>Service Territory Member creation relies on the edit permission on the Service Territory. This validation rule prevents users who should not be able to edit as not all muting permissions for fields is available</description>
+    <errorConditionFormula>NOT($Permission.Allow_Edit_On_Service_Territory)</errorConditionFormula>
+    <errorMessage>You do not have the appropriate permissions to edit a Service Territory</errorMessage>
+</ValidationRule>

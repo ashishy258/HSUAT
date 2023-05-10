@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>8:00AM - 12:00PM</fullName>
+        <default>false</default>
+        <label>8:00AM - 12:00PM</label>
+    </customValue>
+    <customValue>
+        <fullName>12:00PM - 4:00PM</fullName>
+        <default>false</default>
+        <label>12:00PM - 4:00PM</label>
+    </customValue>
+    <customValue>
+        <fullName>4:00PM - 8:30PM</fullName>
+        <default>false</default>
+        <label>4:00PM - 8:30PM</label>
+    </customValue>
+    <customValue>
+        <fullName>8:30PM - 10:30PM</fullName>
+        <default>false</default>
+        <label>8:30PM - 10:30PM</label>
+    </customValue>
+    <masterLabel>AvailableSlots</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

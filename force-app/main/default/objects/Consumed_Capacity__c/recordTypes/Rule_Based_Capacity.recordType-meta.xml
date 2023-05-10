@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rule_Based_Capacity</fullName>
+    <active>true</active>
+    <description>Create a Rule Based Consumed Capacity record</description>
+    <label>Rule Based Capacity</label>
+    <picklistValues>
+        <picklist>Field__c</picklist>
+        <values>
+            <fullName>Work_Type_Category%5F%5Fc</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Object__c</picklist>
+        <values>
+            <fullName>ServiceAppointment</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Slots__c</picklist>
+        <values>
+            <fullName>12%3A00PM - 4%3A00PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%3A00PM - 8%3A30PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%3A00AM - 12%3A00PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%3A30PM - 10%3A30PM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Daily Capacity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rule Based Capacity</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+</RecordType>

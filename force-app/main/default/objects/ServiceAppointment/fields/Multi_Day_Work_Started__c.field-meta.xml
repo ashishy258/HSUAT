@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Multi_Day_Work_Started__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This checkbox field will be set to True when a Multi Day Appointment status changes to On-Site for the first time</description>
+    <externalId>false</externalId>
+    <label>Multi Day Work Started</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

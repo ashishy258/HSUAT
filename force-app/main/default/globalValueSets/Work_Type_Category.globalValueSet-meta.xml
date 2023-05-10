@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Emergency FFS</fullName>
+        <default>false</default>
+        <label>Emergency FFS</label>
+    </customValue>
+    <customValue>
+        <fullName>Emergency MC</fullName>
+        <default>false</default>
+        <label>Emergency MC</label>
+    </customValue>
+    <customValue>
+        <fullName>Installation</fullName>
+        <default>false</default>
+        <label>Installation</label>
+    </customValue>
+    <customValue>
+        <fullName>Part Installs</fullName>
+        <default>false</default>
+        <label>Part Installs</label>
+    </customValue>
+    <customValue>
+        <fullName>Quote</fullName>
+        <default>false</default>
+        <label>Quote</label>
+    </customValue>
+    <customValue>
+        <fullName>Repair FFS</fullName>
+        <default>false</default>
+        <label>Repair FFS</label>
+    </customValue>
+    <customValue>
+        <fullName>Repair MC</fullName>
+        <default>false</default>
+        <label>Repair MC</label>
+    </customValue>
+    <customValue>
+        <fullName>TuneUpAC</fullName>
+        <default>false</default>
+        <label>TuneUpAC</label>
+    </customValue>
+    <customValue>
+        <fullName>TuneUpHeat</fullName>
+        <default>false</default>
+        <label>TuneUpHeat</label>
+    </customValue>
+    <customValue>
+        <fullName>TuneUpHeat FFS</fullName>
+        <default>false</default>
+        <label>TuneUpHeat FFS</label>
+    </customValue>
+    <customValue>
+        <fullName>TuneUpsAC FFS</fullName>
+        <default>false</default>
+        <label>TuneUpsAC FFS</label>
+    </customValue>
+    <description>List of all Work Type Categories</description>
+    <masterLabel>Work Type Category</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

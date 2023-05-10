@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <assignments>
+        <name>Set_Skill_on_Add_Or_Update</name>
+        <label>Set Skill on Add Or Update</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <assignmentItems>
+            <assignToReference>AllSkills</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Skill.MasterLabel</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_0</targetReference>
+        </connector>
+    </assignments>
+    <description>History Tracking for Service Resource Skills on Create and Update</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>SkillsAdditionText</name>
+        <dataType>String</dataType>
+        <expression>{!AllSkills}+&apos; was added&apos;</expression>
+    </formulas>
+    <interviewLabel>Capture Service Resource Skill on Create and Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Capture Service Resource Skill on Create and Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_0</name>
+        <label>Update</label>
+        <locationX>176</locationX>
+        <locationY>455</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.ServiceResource.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Skills__c</field>
+            <value>
+                <elementReference>SkillsAdditionText</elementReference>
+            </value>
+        </inputAssignments>
+        <object>ServiceResource</object>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Set_Skill_on_Add_Or_Update</targetReference>
+        </connector>
+        <object>ServiceResourceSkill</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>AllSkills</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CDF1</field>
+    </columns>
+    <columns>
+        <field>WorkOrder$Service_Job_ID__c</field>
+    </columns>
+    <columns>
+        <field>WorkOrder.ProductsConsumed$ProductItem</field>
+    </columns>
+    <columns>
+        <field>WorkOrder.ProductsConsumed$Call_Type__c</field>
+    </columns>
+    <columns>
+        <field>WorkOrder.ProductsConsumed$ProductItem.External_ID__c</field>
+    </columns>
+    <columns>
+        <field>WorkOrder.ProductsConsumed$ProductItem.Description__c</field>
+    </columns>
+    <columns>
+        <field>WorkOrder.ProductsConsumed$QuantityConsumed</field>
+    </columns>
+    <columns>
+        <field>WorkOrder$EndDate</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>DATEVALUE(WorkOrder.EndDate)</calculatedFormula>
+        <dataType>DateOnly</dataType>
+        <developerName>CDF1</developerName>
+        <label>Completion Date</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <description>Allows reporting on Products Consumed during Work Order completion</description>
+    <format>Tabular</format>
+    <name>Product Consumed</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Work_Orders_with_Product_Consumed__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>WorkOrder$EndDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

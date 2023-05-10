@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Do_Not_Allow_Edit_On_Confirmed_Shifts</fullName>
+    <active>true</active>
+    <description>Make Shift Non Editable once the Status of the Shift is Confirmed</description>
+    <errorConditionFormula>AND(
+NOT(ISNEW()),
+ISPICKVAL(PRIORVALUE(Status),&quot;Confirmed&quot;),
+NOT(ISCHANGED(ServiceResourceId)))</errorConditionFormula>
+    <errorMessage>Shifts in Confirmed Status cannot be updated</errorMessage>
+</ValidationRule>

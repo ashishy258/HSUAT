@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>SA_Status_Change</name>
+        <label>SA Status Change</label>
+        <locationX>176</locationX>
+        <locationY>194</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>EmailBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>ddalmia@salesforce.com,ankit.chawla@salesforce.com,rkotwal@salesforce.com,rajnandini.patil@salesforce.com,a.jethi@salesforce.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>SA Status Change Platform Event Test Dev</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>57.0</apiVersion>
+    <environments>Default</environments>
+    <formulas>
+        <name>EmailBody</name>
+        <dataType>String</dataType>
+        <expression>&quot;Service Appointment ID :- &quot; &amp; {!$Record.Service_Appointment_ID__c} &amp; &quot; Service Job ID :- &quot; &amp; {!$Record.Service_Job_ID__c} &amp; &quot; Outgoing Type :- &quot; &amp; {!$Record.Outgoing_Type__c} &amp; &quot; Status :- &quot; &amp; {!$Record.Status__c}</expression>
+    </formulas>
+    <interviewLabel>POC SA Status Change PE TEST {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>POC SA Status Change PE TEST</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>SA_Status_Change</targetReference>
+        </connector>
+        <object>ServiceAppointmentStatusChange__e</object>
+        <triggerType>PlatformEvent</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

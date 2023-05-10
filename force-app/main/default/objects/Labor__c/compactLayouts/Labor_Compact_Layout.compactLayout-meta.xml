@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Labor_Compact_Layout</fullName>
+    <fields>Name</fields>
+    <fields>Call_Type__c</fields>
+    <fields>Job_Duration__c</fields>
+    <fields>Adjustment_Value__c</fields>
+    <fields>Adjustment_Reason__c</fields>
+    <label>Labor Compact Layout</label>
+</CompactLayout>

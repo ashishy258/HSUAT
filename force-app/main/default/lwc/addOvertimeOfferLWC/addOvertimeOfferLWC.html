@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Add Overtime Offer">
+        <div class="slds-var-p-around_small">
+            <div>
+                <lightning-input type="datetime" name="startDateTime" label="Overtime Offer Start Time" required></lightning-input>
+                <lightning-input type="datetime" name="finishDateTime" label="Overtime Offer Finish Time" required></lightning-input>
+                <lightning-input type="text" name="comment" label="Comment"></lightning-input>                                    
+            </div>
+            <div class="slds-align_absolute-center">
+                <lightning-layout>
+                    <lightning-layout-item padding="around-small">
+                        <lightning-button variant="brand" label="Save" title="Save" onclick={handleSave}></lightning-button>
+                    </lightning-layout-item>
+                </lightning-layout>
+            </div>
+        </div>
+    </lightning-card>
+</template>

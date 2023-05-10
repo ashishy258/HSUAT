@@ -1,0 +1,79 @@
+<template>
+    <lightning-card title="Resource Overtime Offer">
+        <div>
+            <lightning-layout>
+                <lightning-layout-item size="12" flexibility="auto" padding="horizontal-small" class="slds-text-align_right">
+                    <lightning-button variant="brand" label="Refresh" title="refresh" onclick={handleRefreshDataClicked} class="slds-text-align_right"></lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+        <div class="slds-var-p-around_small">
+            <lightning-accordion allow-multiple-sections-open onsectiontoggle={handleSectionToggle} active-section-name={activeSections}>
+                <template lwc:if={listInfo.data}>
+                    <template for:each={listInfo.data} for:item="rec">
+                        <lightning-accordion-section key={rec.id} class={rec.id} name={rec.id} label={rec.label}>
+                            <template lwc:if={rec.isDisabled}>
+                                <div>
+                                    <lightning-input type="datetime" name="startDateTime" data-element={rec.id} label="Overtime Offer Start Time" required value={rec.OfferStartTime} disabled></lightning-input>
+                                    <lightning-input type="datetime" name="finishDateTime" data-element={rec.id} label="Overtime Offer Finish Time" required value={rec.OfferFinishTime} disabled></lightning-input>
+                                    <lightning-combobox
+                                        name="status"
+                                        data-element={rec.id}
+                                        label="Status"
+                                        value={rec.status}
+                                        placeholder="Select Progress"
+                                        options={disabledStatusOptions}
+                                        onchange={handleComboboxChange}
+                                        required
+                                        disabled
+                                    ></lightning-combobox>
+                                    <lightning-input type="text" name="comment" data-element={rec.id} label="Comment" value={rec.comment} disabled></lightning-input>
+                                </div>
+                                <div class="slds-align_absolute-center">
+                                    <lightning-layout>
+                                        <lightning-layout-item padding="around-small">
+                                            <lightning-button variant="Neutral" label="Cancel" title="Cancel" aria-haspopup="dialog"
+                                                onclick={handleCancel}></lightning-button>
+                                            <lightning-button variant="brand" label="Save" data-id={rec.id} title="Save" class="slds-m-left_x-small"
+                                                onclick={handleSave} disabled></lightning-button>
+                                        </lightning-layout-item>
+                                    </lightning-layout>
+                                </div>
+                            </template>
+                            <template lwc:else>
+                                <div>
+                                    <lightning-input type="datetime" name="startDateTime" data-element={rec.id} label="Overtime Offer Start Time" required value={rec.OfferStartTime}></lightning-input>
+                                    <lightning-input type="datetime" name="finishDateTime" data-element={rec.id} label="Overtime Offer Finish Time" required value={rec.OfferFinishTime}></lightning-input>
+                                    <lightning-combobox
+                                        name="status"
+                                        data-element={rec.id}
+                                        label="Status"
+                                        value={rec.status}
+                                        placeholder="Select Progress"
+                                        options={enabledStatusOptions}
+                                        onchange={handleComboboxChange}
+                                        required
+                                    ></lightning-combobox>
+                                    <lightning-input type="text" name="comment" data-element={rec.id} label="Comment" value={rec.comment}></lightning-input>
+                                </div>
+                                <div class="slds-align_absolute-center">
+                                    <lightning-layout>
+                                        <lightning-layout-item padding="around-small">
+                                            <lightning-button variant="Neutral" label="Cancel" title="Cancel" aria-haspopup="dialog"
+                                                onclick={handleCancel}></lightning-button>
+                                            <lightning-button variant="brand" label="Save" data-id={rec.id} title="Save" class="slds-m-left_x-small"
+                                                onclick={handleSave}></lightning-button>
+                                        </lightning-layout-item>
+                                    </lightning-layout>
+                                </div>
+                            </template>
+                        </lightning-accordion-section>
+                    </template>
+                </template>
+                <template lwc:else>
+                    <lightning-spinner alternative-text="Loading" variant="brand"></lightning-spinner>
+                </template>
+            </lightning-accordion>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assigned_Resource__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This field stores the service resource scheduled to the service appointment</description>
+    <externalId>false</externalId>
+    <label>Assigned Resource</label>
+    <referenceTo>ServiceResource</referenceTo>
+    <relationshipLabel>Service Appointments</relationshipLabel>
+    <relationshipName>Service_Appointments</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Create_Duplicate_Postal_Codes</fullName>
+    <active>true</active>
+    <description>This validation rule prevents users from creating duplicate postal codes</description>
+    <errorConditionFormula>(ISNEW() || ISCHANGED(Name)) &amp;&amp; VLOOKUP( $ObjectType.Postal_Codes__c.Fields.Name, $ObjectType.Postal_Codes__c.Fields.Name , Name) = Name</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>This Postal Code already exists</errorMessage>
+</ValidationRule>

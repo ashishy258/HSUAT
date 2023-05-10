@@ -1,0 +1,192 @@
+<template>
+    <lightning-card>
+        <template lwc:if={showCanvas}>
+            <div class="slds-var-p-around_small">
+                <div class="slds-box">
+                    <div style="text-align: center; "><h3 class="slds-text-heading_medium slds-m-bottom_medium">Cost Summary</h3></div>
+                    <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                        <thead>
+                            <tr></tr>
+                        </thead>
+                        <tbody>
+                            <tr class="slds-hint-parent">
+                                <td style="width:50%;">Total Tax $</td>
+                                <td style="width:50%;">
+                                    <input class="slds-input tdclass" type="number" value={totalTax} readonly/>
+                                </td>
+                            </tr>
+                            <tr class="slds-hint-parent">
+                                <td style="width:50%;">Total Labor $</td>
+                                <td style="width:50%;">
+                                    <input class="slds-input tdclass" type="number" value={totalLabor} readonly/>
+                                </td>
+                            </tr>
+                            <tr class="slds-hint-parent">
+                                <td style="width:50%;">Total Parts $</td>
+                                <td style="width:50%;">
+                                    <input class="slds-input tdclass" type="number" value={totalParts} readonly/>
+                                </td>
+                            </tr>
+                            <tr class="slds-hint-parent">
+                                <td style="width:50%;">Total Adjustments $</td>
+                                <td style="width:50%;">
+                                    <input class="slds-input tdclass" type="number" value={totalAdjustments} readonly/>
+                                </td>
+                            </tr>
+                            <tr class="slds-hint-parent">
+                                <td style="width:50%;">Total Service Call $</td>
+                                <td style="width:50%;">
+                                    <input class="slds-input tdclass" type="number" value={totalServiceCall} readonly/>
+                                </td>
+                            </tr>
+                            <tr class="slds-hint-parent">
+                                <td style="width:50%;">Outstanding Balance $</td>
+                                <td style="width:50%;">
+                                    <input class="slds-input tdclass" type="number" value={outstandingBalance} readonly/>
+                                </td>
+                            </tr>
+                            <tr class="slds-hint-parent">
+                                <td style="width:50%;">Total Savings $</td>
+                                <td style="width:50%;">
+                                    <input class="slds-input tdclass" type="number" value={totalSavings} readonly/>
+                                </td>
+                            </tr>
+                            <tr class="slds-hint-parent">
+                                <td style="width:50%;">Total Due $</td>
+                                <td style="width:50%;">
+                                    <input class="slds-input tdclass" type="number" value={totalDue} readonly/>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <br>
+                <div class="slds-box">
+                    <table class="slds-table slds-table_cell-buffer">
+                        <thead>
+                            <tr></tr>
+                        </thead>
+                        <tbody>
+                            <tr class="slds-hint-parent">
+                                <td style="width:50%;">Total Payment $</td>
+                                <td style="width:50%;">
+                                    <input class="slds-input tdclass" type="number" data-field="total_payments__c" value={totalPayment} readonly/>
+                                </td>
+                            </tr>
+                            <tr style="border-bottom:1px solid black">
+                                <td colspan="100%"></td>
+                            </tr>
+                            <tr class="slds-hint-parent">
+                                <td style="width:50%;">Credit Card Amount $</td>
+                                <td style="width:50%;">
+                                    <lightning-input type="number" class="input number" name="credit_card_amount__c" data-field="credit_card_amount__c" value="0" onchange={handleInputChange} onblur={handleBlur} min="0" step=".01"></lightning-input>
+                                </td>
+                            </tr>
+                            <tr style="border-bottom:1px solid black">
+                                <td colspan="100%"></td>
+                            </tr>
+                            <tr class="slds-hint-parent">
+                                <td style="width:50%;">Check Amount $</td>
+                                <td style="width:50%;">
+                                    <lightning-input type="number"  class="input number" name="check_amount__c" data-field="check_amount__c" value="0" onchange={handleInputChange} onblur={handleBlur} min="0" step=".01"></lightning-input>
+                                </td>
+                            </tr>
+                            <tr class="slds-hint-parent">
+                                <td style="width:50%;">Check Number</td>
+                                <td style="width:50%;">
+                                    <lightning-input type="text" class="input" name="check_number__c" message-when-pattern-mismatch="Please enter a valid check number" pattern="[0-9]*" data-field="check_number__c" value={chequeNumber} onchange={handleInputChange} required={isChequeNumberReq} disabled={isChequeNumberDisabled}></lightning-input>
+                                </td>
+                            </tr>
+                            <tr style="border-bottom:1px solid black">
+                                <td colspan="100%"></td>
+                            </tr>
+                            <tr class="slds-hint-parent">
+                                <td style="width:50%;">Cash Amount $</td>
+                                <td style="width:50%;">
+                                    <lightning-input type="number" class="input number" name="cash_amount__c" data-field="cash_amount__c" value="0" onchange={handleInputChange} onblur={handleBlur} min="0" step=".01"></lightning-input>
+                                </td>
+                            </tr>
+                            <tr style="border-bottom:1px solid black">
+                                <td colspan="100%"></td>
+                            </tr>
+                            <tr class="slds-hint-parent">
+                                <td style="width:50%;">Money Order Amount $</td>
+                                <td style="width:50%;">
+                                    <lightning-input type="number" class="input number" name="money_order_amount__c" data-field="money_order_amount__c" value="0" onchange={handleInputChange} onblur={handleBlur} min="0" step=".01"></lightning-input>
+                                </td>
+                            </tr>
+                            <tr class="slds-hint-parent">
+                                <td style="width:50%;">Money Order Number</td>
+                                <td style="width:50%;">
+                                    <lightning-input type="text" class="input" name="money_order_number__c" message-when-pattern-mismatch="Please enter a valid money order number" pattern="[0-9]*" data-field="money_order_number__c" value={moneyOrderNumber} onchange={handleInputChange} required={isMoneyOrderReq} disabled={isMoneyOrderNumberDisabled}></lightning-input>
+                                </td>
+                            </tr>
+                            <tr class="slds-hint-parent">
+                                <td style="width:50%;">Money Order Bank Name</td>
+                                <td style="width:50%;">
+                                    <lightning-input type="text" class="input" name="money_order_bank_name__c" data-field="money_order_bank_name__c" value={moneyOrderBankName} placeholder="type here..." required={isMoneyOrderReq} disabled={isMoneyOrderBankNameDisabled}></lightning-input>
+                                </td>
+                            </tr>
+                            <tr style="border-bottom:1px solid black">
+                                <td colspan="100%"></td>
+                            </tr>
+                            <tr class="slds-hint-parent">
+                                <td style="width:50%; word-wrap: break-word; white-space: normal;">Completed Call With Remaining Balance</td>
+                                <td style="width:50%;">
+                                    <lightning-input type="checkbox" class="input" name="remaining_balance__c" data-field="remaining_balance__c" checked={remainingCheckBoxValue} onchange={handleCheckBoxChange} required={isRemainingBalanceCheckBoxReq}></lightning-input>
+                                </td>
+                            </tr>
+                            <tr class="slds-hint-parent">
+                                <td style="width:50%;">Remaining Balance Reason</td>
+                                <td style="width:50%;">
+                                    <lightning-textarea data-field="remaining_balance_notes__c" class="input" name="remaining_balance_notes__c" placeholder="Enter Note..." required={isRemainingBalanceReq} disabled={isRemainingBalanceNotesDisabled}></lightning-textarea>
+                                </td>
+                            </tr>
+                            <tr style="border-bottom:1px solid black">
+                                <td colspan="100%"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </template>
+        <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="slds-var-p-around_small">
+            <div class="slds-box" style="text-align: center; ">
+                <!-- <h3 class="slds-text-heading_medium slds-m-bottom_medium">
+                    Customer Signature
+                </h3>      -->
+                <template lwc:if={isWOComplete}>
+                    <p><strong>This Work Order has already been Completed</strong></p>
+                </template>
+                <template lwc:elseif={showCanvas}>
+                    <p class="slds-m-bottom_medium"> 
+                        <canvas name="canvasItem" ontouchstart={touchfunctionStart} ontouchmove={touchfunctionMove} style="border:2px solid rgb(136, 135, 135);
+                        background: transparent;"></canvas>
+                    </p>
+                    <p> 
+                        <lightning-input class="slds-text-heading_medium slds-m-bottom_medium" onchange={handleChange} type="checkbox" data-id="checkbox" label="Customer Declined to Sign"></lightning-input>
+                    </p> 
+                    <p class="slds-m-bottom_small"> 
+                    <lightning-button variant="brand" label="Save" title="Save" 
+                        onclick={handleSave} class="slds-m-left_x-small"></lightning-button>
+                    
+                    <lightning-button variant="brand" label="Clear" title="Clear" 
+                        onclick={handleClearClick} class="slds-m-left_x-small"></lightning-button>
+                    </p>
+                </template>
+                <template lwc:elseif={isCannotInitiate}>
+                    <p><strong>Payment Processing is still in progress. Please try again after some time</strong></p>
+                </template>
+                <template lwc:elseif={notOnsite}>
+                    <p><strong>This Service Appointment is not On-Site and Payment Processing has not been requested</strong></p>
+                </template>
+                <template lwc:else>
+                </template>
+                <template lwc:if={showSpinner}>
+                    <lightning-spinner alternative-text="Loading" variant="brand"></lightning-spinner>
+                </template>
+            </div>       
+        </div>
+    </lightning-card>
+</template>

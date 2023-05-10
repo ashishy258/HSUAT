@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job_Title__c</fullName>
+    <externalId>false</externalId>
+    <label>Job Title</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Comfort Advisor</fullName>
+                <default>false</default>
+                <label>Comfort Advisor</label>
+            </value>
+            <value>
+                <fullName>Contractor</fullName>
+                <default>false</default>
+                <label>Contractor</label>
+            </value>
+            <value>
+                <fullName>Plumber</fullName>
+                <default>false</default>
+                <label>Plumber</label>
+            </value>
+            <value>
+                <fullName>Install Apprentice</fullName>
+                <default>false</default>
+                <label>Install Apprentice</label>
+            </value>
+            <value>
+                <fullName>Install Helper</fullName>
+                <default>false</default>
+                <label>Install Helper</label>
+            </value>
+            <value>
+                <fullName>Install Tech</fullName>
+                <default>false</default>
+                <label>Install Tech</label>
+            </value>
+            <value>
+                <fullName>Service Apprentice</fullName>
+                <default>false</default>
+                <label>Service Apprentice</label>
+            </value>
+            <value>
+                <fullName>Service Master Tech</fullName>
+                <default>false</default>
+                <label>Service Master Tech</label>
+            </value>
+            <value>
+                <fullName>Service Part Runner</fullName>
+                <default>false</default>
+                <label>Service Part Runner</label>
+            </value>
+            <value>
+                <fullName>Service Tech</fullName>
+                <default>false</default>
+                <label>Service Tech</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

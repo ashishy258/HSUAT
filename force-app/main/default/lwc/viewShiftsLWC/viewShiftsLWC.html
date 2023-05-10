@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="Confirmed Shifts for next 7 days">
+        <div>
+            <lightning-layout>
+                <lightning-layout-item size="12" flexibility="auto" padding="horizontal-small" class="slds-text-align_right">
+                    <lightning-button variant="brand" label="Refresh" title="refresh" onclick={handleRefreshDataClicked} class="slds-text-align_right"></lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+        <div class="slds-var-p-around_small">
+            <template lwc:if={listInfo.data}>
+                <div class="slds-p-around_none slds-m-top_x-small slds-m-bottom_small slds-m-horizontal_none">
+                    <template for:each={listInfo.data} for:item="rec">
+                        <div key={rec.id} class="slds-box slds-hint-parent">
+                            <p><strong>Shift Number: </strong>{rec.shiftNumber}</p>
+                            <p><strong>Start Time: </strong>{rec.startDate}</p>
+                            <p><strong>End Time: </strong>{rec.endDate}</p>
+                            <p><strong>Status: </strong>{rec.status}</p>
+                        </div>
+                    </template>
+                </div>
+            </template>
+            <template lwc:else>
+                <lightning-spinner alternative-text="Loading" variant="brand"></lightning-spinner>
+            </template>
+        </div>
+    </lightning-card>
+</template>

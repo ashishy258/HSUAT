@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gross_Available_Time__c</fullName>
+    <externalId>false</externalId>
+    <formula>(Capacity__c - Total_PTO_Duration__c - Total_Shrink_Duration__c)/60</formula>
+    <label>Gross Available Time</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

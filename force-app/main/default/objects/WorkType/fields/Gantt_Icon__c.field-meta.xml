@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gantt_Icon__c</fullName>
+    <externalId>false</externalId>
+    <label>Gantt Icon</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>RedCircle</fullName>
+                <default>false</default>
+                <label>Red Circle</label>
+            </value>
+            <value>
+                <fullName>ResourceWithNotepad</fullName>
+                <default>false</default>
+                <label>Resource With Notepad</label>
+            </value>
+            <value>
+                <fullName>LightBulb</fullName>
+                <default>false</default>
+                <label>Light Bulb</label>
+            </value>
+            <value>
+                <fullName>BlackCircle</fullName>
+                <default>false</default>
+                <label>Black Circle</label>
+            </value>
+            <value>
+                <fullName>Wrench</fullName>
+                <default>false</default>
+                <label>Wrench</label>
+            </value>
+            <value>
+                <fullName>AquaCircle</fullName>
+                <default>false</default>
+                <label>Aqua Circle</label>
+            </value>
+            <value>
+                <fullName>PaperWithPen</fullName>
+                <default>false</default>
+                <label>Paper With Pen</label>
+            </value>
+            <value>
+                <fullName>Home</fullName>
+                <default>false</default>
+                <label>Home</label>
+            </value>
+            <value>
+                <fullName>LeakTest</fullName>
+                <default>false</default>
+                <label>Leak Test</label>
+            </value>
+            <value>
+                <fullName>Install</fullName>
+                <default>false</default>
+                <label>Install</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

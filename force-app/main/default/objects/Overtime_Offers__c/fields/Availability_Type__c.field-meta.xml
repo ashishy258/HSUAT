@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Availability_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Availability Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>On Call</fullName>
+                <default>false</default>
+                <label>On Call</label>
+            </value>
+            <value>
+                <fullName>Default</fullName>
+                <default>false</default>
+                <label>Default</label>
+            </value>
+            <value>
+                <fullName>Day Off</fullName>
+                <default>false</default>
+                <label>Day Off</label>
+            </value>
+            <value>
+                <fullName>Additional Hours</fullName>
+                <default>false</default>
+                <label>Additional Hours</label>
+            </value>
+            <value>
+                <fullName>Non-Working</fullName>
+                <default>false</default>
+                <label>Non-Working</label>
+            </value>
+            <value>
+                <fullName>Working</fullName>
+                <default>false</default>
+                <label>Working</label>
+            </value>
+            <value>
+                <fullName>Overtime - Before (1h)</fullName>
+                <default>false</default>
+                <label>Overtime - Before (1h)</label>
+            </value>
+            <value>
+                <fullName>Overtime - Before (2h)</fullName>
+                <default>false</default>
+                <label>Overtime - Before (2h)</label>
+            </value>
+            <value>
+                <fullName>Overtime - Before (3h)</fullName>
+                <default>false</default>
+                <label>Overtime - Before (3h)</label>
+            </value>
+            <value>
+                <fullName>Overtime - Before (4h)</fullName>
+                <default>false</default>
+                <label>Overtime - Before (4h)</label>
+            </value>
+            <value>
+                <fullName>Overtime - Before (5h)</fullName>
+                <default>false</default>
+                <label>Overtime - Before (5h)</label>
+            </value>
+            <value>
+                <fullName>Overtime - Before (6h)</fullName>
+                <default>false</default>
+                <label>Overtime - Before (6h)</label>
+            </value>
+            <value>
+                <fullName>Overtime - Before (Any)</fullName>
+                <default>false</default>
+                <label>Overtime - Before (Any)</label>
+            </value>
+            <value>
+                <fullName>Overtime - After (1h)</fullName>
+                <default>false</default>
+                <label>Overtime - After (1h)</label>
+            </value>
+            <value>
+                <fullName>Overtime - After (2h)</fullName>
+                <default>false</default>
+                <label>Overtime - After (2h)</label>
+            </value>
+            <value>
+                <fullName>Overtime - After (3h)</fullName>
+                <default>false</default>
+                <label>Overtime - After (3h)</label>
+            </value>
+            <value>
+                <fullName>Overtime - After (4h)</fullName>
+                <default>false</default>
+                <label>Overtime - After (4h)</label>
+            </value>
+            <value>
+                <fullName>Overtime - After (5h)</fullName>
+                <default>false</default>
+                <label>Overtime - After (5h)</label>
+            </value>
+            <value>
+                <fullName>Overtime - After (6h)</fullName>
+                <default>false</default>
+                <label>Overtime - After (6h)</label>
+            </value>
+            <value>
+                <fullName>Overtime - After (Any)</fullName>
+                <default>false</default>
+                <label>Overtime - After (Any)</label>
+            </value>
+            <value>
+                <fullName>RDO Offering</fullName>
+                <default>false</default>
+                <label>RDO Offering</label>
+            </value>
+            <value>
+                <fullName>Overtime Offering</fullName>
+                <default>false</default>
+                <label>Overtime Offering</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

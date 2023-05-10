@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Item_Compact_Layout</fullName>
+    <fields>Product2Id</fields>
+    <fields>Part_Cost__c</fields>
+    <fields>QuantityOnHand</fields>
+    <fields>QuantityUnitOfMeasure</fields>
+    <label>Product Item Compact Layout</label>
+</CompactLayout>

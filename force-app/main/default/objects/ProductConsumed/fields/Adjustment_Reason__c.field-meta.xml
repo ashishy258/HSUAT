@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Adjustment_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Adjustment Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Flat Rate Price</fullName>
+                <default>false</default>
+                <label>Flat Rate Price</label>
+            </value>
+            <value>
+                <fullName>Parts Discount - Marketing Campaign</fullName>
+                <default>false</default>
+                <label>Parts Discount - Marketing Campaign</label>
+            </value>
+            <value>
+                <fullName>Multiple Parts - Discount Adjustment</fullName>
+                <default>false</default>
+                <label>Multiple Parts - Discount Adjustment</label>
+            </value>
+            <value>
+                <fullName>Field Manager Approved - Parts Adjustment</fullName>
+                <default>false</default>
+                <label>Field Manager Approved - Parts Adjustment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

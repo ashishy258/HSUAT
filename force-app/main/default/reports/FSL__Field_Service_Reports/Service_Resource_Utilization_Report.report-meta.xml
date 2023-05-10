@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Resource_Capacity__c$Capacity_Date__c</field>
+    </columns>
+    <columns>
+        <field>Resource_Capacity__c$Service_Resource__c</field>
+    </columns>
+    <columns>
+        <field>Resource_Capacity__c$Service_Resource__c.Job_Title__c</field>
+    </columns>
+    <columns>
+        <field>Resource_Capacity__c$Service_Territory__c</field>
+    </columns>
+    <columns>
+        <field>Resource_Capacity__c$Gross_Available_Time__c</field>
+    </columns>
+    <columns>
+        <field>Resource_Capacity__c$Booked_Hours__c</field>
+    </columns>
+    <columns>
+        <field>Resource_Capacity__c$Total_Travel_Time_in_Hours__c</field>
+    </columns>
+    <columns>
+        <field>Resource_Capacity__c$Total_Break_Duration_in_Hours__c</field>
+    </columns>
+    <columns>
+        <field>Resource_Capacity__c$Total_Shrink_Duration_In_Hours__c</field>
+    </columns>
+    <columns>
+        <field>Resource_Capacity__c$Total_PTO_Duration_In_Hours__c</field>
+    </columns>
+    <columns>
+        <field>Resource_Capacity__c$Total_Net_Available_Time_In_Hours__c</field>
+    </columns>
+    <description>Allows reporting on utilization of each Service Resource</description>
+    <format>Tabular</format>
+    <name>Service Resource Utilization Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Service_Resource_Utilization__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Resource_Capacity__c$Capacity_Date__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Resource_Capacity__c$Capacity_Date__c</dateColumn>
+        <interval>INTERVAL_THISWEEK</interval>
+    </timeFrameFilter>
+</Report>

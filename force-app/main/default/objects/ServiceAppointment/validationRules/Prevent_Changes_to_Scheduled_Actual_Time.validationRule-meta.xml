@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Changes_to_Scheduled_Actual_Time</fullName>
+    <active>true</active>
+    <description>This validation rule prevents users from changing Scheduled and Actual Times, once the Appointment is in status On-Site</description>
+    <errorConditionFormula>AND(
+NOT($Profile.Name =&quot;Field Service Technician&quot;),
+NOT(ISCHANGED(Status)),
+OR(
+ISCHANGED(ActualStartTime),
+ISCHANGED(ActualEndTime),
+ISCHANGED(SchedStartTime),
+ISCHANGED(SchedEndTime)),
+OR(
+ISPICKVAL(PRIORVALUE(Status),&quot;On-Site&quot;),
+ISPICKVAL(PRIORVALUE(Status),&quot;Completed&quot;))
+)</errorConditionFormula>
+    <errorMessage>You do not have permissions to change the Scheduled or Actual Times on the Service Appointment once it is in status Onsite or Completed</errorMessage>
+</ValidationRule>

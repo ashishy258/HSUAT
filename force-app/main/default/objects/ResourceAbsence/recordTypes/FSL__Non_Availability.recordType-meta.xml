@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSL__Non_Availability</fullName>
+    <active>true</active>
+    <label>Non Availability</label>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Additional Travel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assist Other Tech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Don%27t Assign Work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Floater</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Holiday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Part Pick-Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relocated to Install Dept</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remain in Place</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Replenishment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reserved for E-VEC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ride Along Pickup-Dropoff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sick</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stacking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telefix</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Truck Breakdown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Truck Inventory</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Truck Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uniforms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Union Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vacation</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Weather-Road Conditions</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>
