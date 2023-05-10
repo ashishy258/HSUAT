@@ -2,10 +2,10 @@
  * @description       : To Created daily based CC records based on daily based Capacity_Rule_Template__c records
  * @author            : Ashish Yadav
  * @group             :
- * @last modified on  : 02-14-2021
+ * @last modified on  : 02-14-2023
  * Modifications Log
  * Ver   Date         Author                 Modification
- * 1.0   02-14-2021   Ashish Yadav    Initial Version
+ * 1.0   02-14-2023   Ashish Yadav    Initial Version
  **/
 global class SFS_ABNewDayBatchDailyConsumedCapacity implements Database.Batchable<sObject> {
     global string query = 'SELECT ID, Slots__c, Active__c,Service_Territory__c,Type__c,Max__c,Max_Rule__c,Object__c,Field__c,Value__c,Release_X_Hours_Before__c,Release_X_Hours_Before_Rule__c,Day_Of_Week__c,RecordTypeId FROM Capacity_Rule_Template__c WHERE Active__c=TRUE AND Type__c=\'Daily Capacity\'';

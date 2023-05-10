@@ -1,11 +1,11 @@
 /**
  * @description       :
- * @author            : Anjana Bansal
+ * @author            : Vandana Verma 
  * @group             :
- * @last modified on  : 04-15-2021
+ * @last modified on  : 04-15-2023
  * Modifications Log
  * Ver   Date         Author              Modification
- * 1.0   10-19-2020   Vandana Verma        Initial Version
+ * 1.0   04-15-2023   Vandana Verma        Initial Version
  **/
 global class SFS_ABConstantUtil {
      public static final string SA_SCHEDULED = 'Scheduled';

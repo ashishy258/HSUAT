@@ -1,13 +1,13 @@
 /**
 * @description       :
-* @author            : Salesforce Services
+* @author            : Ashish Yadav
 * @group             :
-* @last modified on  : 05-17-2021
-* @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+* @last modified on  : 05-17-2023
+* @last modified by  : Ashish Yadav
 * Modifications Log
 * Ver   Date         Author                               Modification
-* 1.0   11-11-2020   Salesforce Services                  Initial Version
-* 2.0   09-03-2023   Divya Dalmia                         Initial Version
+* 1.0   02-17-2023   Ashish Yadav                         Initial Version
+* 2.0   03-03-2023   Divya Dalmia                         Initial Version
 **/
 
 public with sharing class SFS_ABResourceAbsenceTriggerHandler implements rflib_TriggerHandler {

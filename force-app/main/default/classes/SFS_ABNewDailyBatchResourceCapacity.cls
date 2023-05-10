@@ -1,11 +1,11 @@
 /**
  * @description       :
- * @author            : David
+ * @author            : Ashish Yadav
  * @group             :
- * @last modified on  : 03-12-2021
+ * @last modified on  : 03-12-2023
  * Modifications Log
  * Ver   Date         Author   Modification
- * 1.0   05-10-2021   David    Initial Version
+ * 1.0   05-10-2023   Ashish Yadav    Initial Version
  **/
 global class SFS_ABNewDailyBatchResourceCapacity implements Database.Batchable<sObject> {
     global string query = 'SELECT ID,ServiceTerritoryId,ServiceResourceId,EffectiveStartDate,EffectiveEndDate,ServiceTerritory.OperatingHours.TimeZone FROM ServiceTerritoryMember Where ServiceResource.IsActive=TRUE AND ServiceTerritory.IsActive=TRUE AND TerritoryType!=\'R\'';

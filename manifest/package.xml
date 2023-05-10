@@ -265,7 +265,7 @@
         <name>CustomPermission</name>
     </types>
      <types>
-         <members>Field_Service_Execute_Work</members>
+        <members>Field_Service_Execute_Work</members>
         <members>Field_Service_Manage_Capacity</members>
         <members>Field_Service_Manage_Resources</members>
         <members>Password_never_expires</members>
@@ -325,8 +325,8 @@
 		<name>LightningComponentBundle</name>
 	</types>
     <types>
-    <members>HS_SignatureHelper</members>
-	<members>ImageCaptureController</members>
+        <members>HS_SignatureHelper</members>
+        <members>ImageCaptureController</members>
     	<members>ViewingRecordsOnMobileHelper</members>
         <members>SFS_ABConstantUtil</members>
         <members>HS_AWSFileUploadUtil</members>
@@ -371,7 +371,7 @@
 		<members>Update_Swap_Overlap_on_Shift_Swap</members>
 		<name>Flow</name>
 	</types>
-    	<types>
+    <types>
 		<members>LightningToast</members>
 		<name>AuraDefinitionBundle</name>
 	</types>

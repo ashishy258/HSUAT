@@ -1,12 +1,12 @@
 /**
  * @description       :
- * @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+ * @author            : Ashish Yadav
  * @group             :
- * @last modified on  : 05-19-2021
- * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+ * @last modified on  : 05-03-2023
+ * @last modified by  : Ashish Yadav
  * Modifications Log
  * Ver   Date         Author                               Modification
- * 1.0   05-03-2021   ChangeMeIn@UserSettingsUnder.SFDoc   Initial Version
+ * 1.0   05-03-2023   Ashish Yadav   Initial Version
  **/
 global class SFS_ABRelocatingResourceCapacityBatch implements Database.Batchable<sObject>, Database.Stateful {
     private SFS_AB_Capacity_Settings__mdt endBatchDays;

@@ -1,11 +1,11 @@
 /**
  * @description       : To create 60 days resource capacity records based on STM and filters
- * @author            : Salesforce Services
+ * @author            : Ashish Yadav 
  * @group             :
- * @last modified on  : 06-28-2021
+ * @last modified on  : 04-28-2023
  * Modifications Log
  * Ver   Date         Author                    Modification
- * 1.0   04-22-2021   Salesforce Services       Initial Version
+ * 1.0   04-28-2023   Ashish Yadav      Initial Version
  **/
 global class SFS_ABResourceCapacityTimeSlotBatch implements Database.Batchable<sObject>, Database.Stateful {
     private final String relocationString = 'R';

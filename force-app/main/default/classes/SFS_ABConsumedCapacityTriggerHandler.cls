@@ -1,12 +1,12 @@
 /**
  * @description       :
- * @author            : Salesforce Services
+ * @author            : Vandana Verma
  * @group             :
- * @last modified on  : 05-21-2021
- * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+ * @last modified on  : 04-02-2023
+ * @last modified by  : Vandana Verma
  * Modifications Log
  * Ver   Date         Author                               Modification
- * 1.0   11-02-2020   Salesforce Services                  Initial Version
+ * 1.0   04-02-2023   Vandana Verma                 Initial Version
  **/
 public with sharing class SFS_ABConsumedCapacityTriggerHandler implements rflib_TriggerHandler {
     public void run(rflib_TriggerManager.Args args) {

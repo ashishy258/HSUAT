@@ -1,11 +1,11 @@
 /**
  * @description       : To Capacity Rebuild Job data for any change related to Resource and Territory
- * @author            : Salesforce Services
+ * @author            : Vandana Verma 
  * @group             :
- * @last modified on  : 06-14-2021
+ * @last modified on  : 03-14-2023
  * Modifications Log
  * Ver   Date         Author                    Modification
- * 1.0   05-08-2021   Salesforce Services       Initial Version
+ * 1.0   05-08-2023   Vandana Verma       Initial Version
  **/
 
 public class SFS_ABCapacityRebuildJobUtil {

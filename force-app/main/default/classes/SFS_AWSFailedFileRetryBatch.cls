@@ -1,6 +1,6 @@
 /**
 * @description       : To retry sending failed content version
-* @author            : Salesforce Services
+* @author            : Vandana Verma
 * @group             :
 * @last modified on  : 18-04-2023
 * Modifications Log

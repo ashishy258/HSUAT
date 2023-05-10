@@ -1,11 +1,11 @@
 /**
  * @description       : To create 60 days resource capacity records based on STM and filters
- * @author            : Salesforce Services
+ * @author            : Ashish Yadav
  * @group             :
- * @last modified on  : 07-15-2021
+ * @last modified on  : 04-15-2023
  * Modifications Log
  * Ver   Date         Author                    Modification
- * 1.0   04-22-2021   Salesforce Services       Initial Version
+ * 1.0   04-15-2023  Ashish Yadav      Initial Version
  **/
 public class SFS_ABResourceCapacityTimeSlotUtil {
     public static Set<Id> operatingHoursIdSet;

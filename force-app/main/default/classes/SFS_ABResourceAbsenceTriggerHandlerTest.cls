@@ -1,12 +1,12 @@
 /**
 * @description       :
-* @author            : Salesforce Services
+* @author            : Ashish Yadav
 * @group             :
-* @last modified on  : 11-04-2020
-* @last modified by  : Salesforce Services
+* @last modified on  : 14-04-2023
+* @last modified by  : Ashish Yadav
 * Modifications Log
 * Ver   Date         Author                               Modification
-* 1.0   11-02-2020   Salesforce Services   Initial Version
+* 1.0   14-04-2023   Ashish Yadav   Initial Version
 **/
 @IsTest
 public class SFS_ABResourceAbsenceTriggerHandlerTest {

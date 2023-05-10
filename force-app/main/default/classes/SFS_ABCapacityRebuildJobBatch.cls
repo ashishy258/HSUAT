@@ -1,11 +1,11 @@
 /**
  * @description       : To create 60 days resource capacity records based on STM and filters
- * @author            : Salesforce Services
+ * @author            : Vandana Verma 
  * @group             :
- * @last modified on  : 05-19-2021
+ * @last modified on  : 04-22-2023
  * Modifications Log
  * Ver   Date         Author                    Modification
- * 1.0   04-22-2021   Salesforce Services       Initial Version
+ * 1.0   04-22-2023   Vandana Verma       Initial Version
  **/
 global class SFS_ABCapacityRebuildJobBatch implements Database.Batchable<sObject>, Database.Stateful {
     // Vars

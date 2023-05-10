@@ -1,11 +1,11 @@
 /**
  * @description       :
- * @author            : Salesforce Service
+ * @author            : Divya Dalmia
  * @group             :
- * @last modified on  : 11-20-2020
+ * @last modified on  : 04-20-2023
  * Modifications Log
  * Ver   Date         Author                 Modification
- * 1.0   11-08-2020   Salesforce Service     Initial Version
+ * 1.0   04-20-2023   Divya Dalmia     Initial Version
  **/
 public class SFS_ABUtil {
     public static Map<Id, List<ServiceAppointment>> resourceIdToServiceAppointmentMap = new Map<Id, List<ServiceAppointment>>();

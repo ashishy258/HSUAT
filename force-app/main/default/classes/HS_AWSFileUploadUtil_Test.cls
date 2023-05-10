@@ -1,12 +1,12 @@
 /**
  * @description       :
- * @author            : Salesforce Services
+ * @author            : Vandana Verma 
  * @group             :
- * @last modified on  : 11-04-2020
- * @last modified by  : Salesforce Services
+ * @last modified on  : 04-04-2023
+ * @last modified by  : Vandana Verma 
  * Modifications Log
  * Ver   Date         Author                               Modification
- * 1.0   11-02-2020   Vandana Verma                 Initial Version
+ * 1.0   04-04-2023   Vandana Verma                 Initial Version
  **/
 @isTest
 public class HS_AWSFileUploadUtil_Test {

@@ -1,11 +1,11 @@
 /**
  * @description       : To Created Rule based CC records based on Rule based Capacity_Rule_Template__c records
- * @author            : Salesforce Services
+ * @author            : Ashish Yadav
  * @group             :
- * @last modified on  : 06-30-2021
+ * @last modified on  : 05-30-2023
  * Modifications Log
  * Ver   Date         Author                 Modification
- * 1.0   05-10-2021   Salesforce Services    Initial Version
+ * 1.0   05-10-2023   Ashish Yadav    Initial Version
  **/
 global class SFS_ABNewDayBatchRuleConsumedCapacity implements Database.Batchable<sObject>, Database.Stateful {
     global string query = 'SELECT ID, Slots__c, Active__c,Service_Territory__c,Type__c,Max__c,Day_Of_Week__c,Max_Rule__c,Object__c,Field__c,Value__c,Release_X_Hours_Before__c,Release_X_Hours_Before_Rule__c,Parent_Capacity_Rule_Template__c FROM Capacity_Rule_Template__c WHere Active__c=TRUE AND Type__c=\'Rule Based Capacity\'';
