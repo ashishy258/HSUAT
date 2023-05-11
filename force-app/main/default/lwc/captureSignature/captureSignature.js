@@ -5,7 +5,6 @@ import costInformation from '@salesforce/apex/HS_SignatureHelper.costInformation
 import LightningAlert from 'lightning/alert';
 import { NavigationMixin } from 'lightning/navigation';
 import { updateRecord } from 'lightning/uiRecordApi';
-import { refreshApex } from '@salesforce/apex';
 
 //Importing fields for Updaing Work Order
 import ID_FIELD from '@salesforce/schema/WorkOrder.Id';
@@ -228,7 +227,6 @@ export default class CaptureSignature extends NavigationMixin(LightningElement) 
     listInfo({ error, data }){
         if (data) {
             console.log(data);
-            this.valuetoprint=data['Customer_Name__c'];
             this.error = 'data';
             this.isScreenVisible = data['Wrap_Up__c'];
             
@@ -260,7 +258,7 @@ export default class CaptureSignature extends NavigationMixin(LightningElement) 
     }
 
     connectedCallback(){
-      this.randomNumber = Math.random();
+        this.randomNumber = Math.random();
     }
 
     //retrieve canvase and context
