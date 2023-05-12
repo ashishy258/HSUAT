@@ -4,7 +4,7 @@
         <name>SA_Status_Change</name>
         <label>SA Status Change</label>
         <locationX>176</locationX>
-        <locationY>194</locationY>
+        <locationY>170</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -32,7 +32,7 @@
     <formulas>
         <name>EmailBody</name>
         <dataType>String</dataType>
-        <expression>&quot;Service Appointment ID :- &quot; &amp; {!$Record.Service_Appointment_ID__c} &amp; &quot; Service Job ID :- &quot; &amp; {!$Record.Service_Job_ID__c} &amp; &quot; Outgoing Type :- &quot; &amp; {!$Record.Outgoing_Type__c} &amp; &quot; Status :- &quot; &amp; {!$Record.Status__c}</expression>
+        <expression>&quot;Service Appointment ID :- &quot; &amp; {!$Record.Service_Appointment_ID__c} &amp; &quot; Service Job ID :- &quot; &amp; {!$Record.External_ID__c} &amp; &quot; Outgoing Type :- &quot; &amp; {!$Record.Outgoing_Type__c} &amp; &quot; Status :- &quot; &amp; {!$Record.Status__c}</expression>
     </formulas>
     <interviewLabel>POC SA Status Change PE TEST {!$Flow.CurrentDateTime}</interviewLabel>
     <label>POC SA Status Change PE TEST</label>
@@ -64,5 +64,5 @@
         <object>ServiceAppointmentStatusChange__e</object>
         <triggerType>PlatformEvent</triggerType>
     </start>
-    <status>Obsolete</status>
+    <status>Active</status>
 </Flow>

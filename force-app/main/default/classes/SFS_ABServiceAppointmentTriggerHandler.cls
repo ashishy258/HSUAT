@@ -32,6 +32,7 @@ public class SFS_ABServiceAppointmentTriggerHandler implements rflib_TriggerHand
             System.debug('After Update ==> SFS_ABServiceAppointmentTriggerHandler');
             handleSAAfterUpdate(args);
             invokeSAStatusChangePE(args);
+            serviceAppAssignmentDelete(args);
             // Uncomment this for RSO
             invokeRSO(args);
             updateParentWorkOrderToCancelled(args);
@@ -355,7 +356,7 @@ public class SFS_ABServiceAppointmentTriggerHandler implements rflib_TriggerHand
                        || oldServiceAppointmentRecord.Status == SFS_ABConstantUtil.SA_ONSITE && appointment.Status == SFS_ABConstantUtil.SA_COMPLETED)
                     {
                         ServiceAppointmentStatusChange__e serviceAppointmentStatusChange = new ServiceAppointmentStatusChange__e();
-                        serviceAppointmentStatusChange.Service_Job_ID__c = appointment.Service_Job_ID__c;
+                        serviceAppointmentStatusChange.External_Id__c = appointment.External_ID__c;
                         serviceAppointmentStatusChange.Service_Appointment_ID__c = appointment.Id;
                         serviceAppointmentStatusChange.Status__c = appointment.Status;
                         
@@ -375,6 +376,47 @@ public class SFS_ABServiceAppointmentTriggerHandler implements rflib_TriggerHand
             if(statusChangeEventList.size() > 0){
                 
                 List<Database.SaveResult> results = EventBus.publish(statusChangeEventList);
+                
+                for (Database.SaveResult sr : results) {
+                    if (sr.isSuccess()) {
+                        System.debug('Successfully published event.');
+                    } else {
+                        for(Database.Error err : sr.getErrors()) {
+                            System.debug('Error returned: ' + err.getStatusCode() );
+                        }
+                    }
+                }
+            }
+        }
+        catch(Exception ex)
+        {
+            System.debug('Exception in SFS_ABServiceAppointmentTriggerHandler Publish Event '+ ex);
+        }
+    }
+
+    private static void serviceAppAssignmentDelete(rflib_TriggerManager.Args args)
+    {
+        try{
+            List<Service_Appointment_Unscheduled__e> saAssignmentDeleteEventList = new List<Service_Appointment_Unscheduled__e>();
+            
+            for (ServiceAppointment appointment : (List<ServiceAppointment>) args.newRecords) {
+                ServiceAppointment oldServiceAppointmentRecord = (ServiceAppointment) args.oldRecordsMap.get(appointment.Id);
+                
+                if (oldServiceAppointmentRecord.Status == SFS_ABConstantUtil.SA_PRE_DISPATCHED && appointment.Status == SFS_ABConstantUtil.SA_OPEN){
+                    Service_Appointment_Unscheduled__e saAssignmentDelete = new Service_Appointment_Unscheduled__e();
+                    saAssignmentDelete.External_Id__c = appointment.External_ID__c;
+                    saAssignmentDelete.Service_Appointment_ID__c = appointment.Id;
+                    saAssignmentDelete.Status__c = appointment.Status;
+                    saAssignmentDelete.Operation_Type__c = 'Unscheduled';
+                    
+                    saAssignmentDeleteEventList.add(saAssignmentDelete);
+                    
+                }
+                
+            }
+            if(saAssignmentDeleteEventList.size() > 0){
+                
+                List<Database.SaveResult> results = EventBus.publish(saAssignmentDeleteEventList);
                 
                 for (Database.SaveResult sr : results) {
                     if (sr.isSuccess()) {

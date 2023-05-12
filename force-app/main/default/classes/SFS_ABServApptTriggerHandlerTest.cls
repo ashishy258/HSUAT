@@ -298,6 +298,10 @@ public class SFS_ABServApptTriggerHandlerTest {
         FSL.GlobalAPIS.addStatusTransition(SFS_ABConstantUtil.SA_SCHEDULED, SFS_ABConstantUtil.SA_PRE_DISPATCHED);
         sa1.Status=SFS_ABConstantUtil.SA_PRE_DISPATCHED;
         update sa1;
+
+        FSL.GlobalAPIS.addStatusTransition(SFS_ABConstantUtil.SA_PRE_DISPATCHED, SFS_ABConstantUtil.SA_OPEN);
+        sa1.Status=SFS_ABConstantUtil.SA_OPEN;
+        update sa1;
         Test.stopTest();
     }
     @IsTest
