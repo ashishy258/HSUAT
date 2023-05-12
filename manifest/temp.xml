@@ -2,18 +2,12 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
 		<members>SFS_ABServiceAppointmentTriggerHandler</members>
+        <members>SFS_ABServApptTriggerHandlerTest</members>
 		<name>ApexClass</name>
-	</types>
-    <types>
-		<members>ServiceAppointmentStatusChange__e.External_Id__c</members>
-		<members>Service_Appointment_Unscheduled__e.External_Id__c</members>
-		<members>Service_Appointment_Unscheduled__e.Operation_Type__c</members>
-		<members>Service_Appointment_Unscheduled__e.Service_Appointment_Id__c</members>
-		<members>Service_Appointment_Unscheduled__e.Status__c</members>
-		<name>CustomField</name>
 	</types>
 	<types>
 		<members>Service_Appointment_Unscheduled__e</members>
+        <members>ServiceAppointmentStatusChange__e</members>
 		<name>CustomObject</name>
 	</types>
 	<types>
