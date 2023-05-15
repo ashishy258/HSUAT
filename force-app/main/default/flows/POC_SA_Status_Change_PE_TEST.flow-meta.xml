@@ -64,5 +64,5 @@
         <object>ServiceAppointmentStatusChange__e</object>
         <triggerType>PlatformEvent</triggerType>
     </start>
-    <status>Active</status>
+    <status>Obsolete</status>
 </Flow>

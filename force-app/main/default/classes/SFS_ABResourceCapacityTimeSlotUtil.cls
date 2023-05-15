@@ -19,7 +19,7 @@ public class SFS_ABResourceCapacityTimeSlotUtil {
     public static Integer daysToBuild;
     public static Set<Resource_Capacity__c> lstResourceCapacity = new Set<Resource_Capacity__c>();
     public static Map<String, TimeSlotWrapper> totalTravelTimeMap = new Map<String, TimeSlotWrapper>();
-    public static final Set<String> statusSet = new Set<String>{ 'Closed', 'Pending Closed', 'Hold' };
+    public static final Set<String> statusSet = new Set<String>{ 'Completed', 'Canceled' };
     public static Date stmLocalStartDate;
     public static Date stmLocalEndDate;
     public static Date stmMinStartDate;

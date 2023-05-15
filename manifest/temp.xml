@@ -3,6 +3,7 @@
 	<types>
 		<members>SFS_ABServiceAppointmentTriggerHandler</members>
         <members>SFS_ABServApptTriggerHandlerTest</members>
+		<members>SFS_ABResourceCapacityTimeSlotUtil</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
